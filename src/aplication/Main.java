@@ -30,41 +30,36 @@ public class Main {
         String dateBirth = sc.nextLine();
         //convertendo datas
         SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");
-        Date y1 = sdf1.parse(dateBirth);
+        Date birthDate = sdf1.parse(dateBirth);
         ///////////////////////////////////////////////////////////////////
-        Client client = new Client(nome,email,y1);
+        Client client = new Client(nome,email,birthDate);
         // Dados do Pedido;
         System.out.println("Enter order data:");
         System.out.print("Status: ");
-        String status = sc.next();
+        OrderStatus status = OrderStatus.valueOf(sc.next());
         System.out.print("How many items to this order? ");
         Integer n = sc.nextInt();
-        Order order = new Order(new Date(), OrderStatus.valueOf(status), client);
+        Order order = new Order(new Date(),status , client);
 
         for(int i = 0 ; i < n; i++){
 
             System.out.println("Enter #"+i +1 + " item data:");
             System.out.print("Product Name: ");
-            String productName = sc.next();
+            sc.nextLine();
+            String productName = sc.nextLine();
             System.out.print("Product price: ");
             Double price = sc.nextDouble();
             System.out.print("quantity: ");
             Integer quantity = sc.nextInt();
-            Product product;
-            OrderItem orderItem = new OrderItem(quantity,price, product = new Product(productName,price));
+            Product product = new Product(productName,price);
+            OrderItem orderItem = new OrderItem(quantity,price,product);
             order.addItem(orderItem);
 
         }
 
 
-
-
-
-
-
-
-
-
+        System.out.println();
+        System.out.println(order);
 
 
 

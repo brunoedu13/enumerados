@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08d93855-eb8a-4771-aa1c-0693555a928e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aplication/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplication/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +128,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
